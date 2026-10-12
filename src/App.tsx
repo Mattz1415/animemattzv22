@@ -6,20 +6,22 @@ import { MobileNav } from './components/layout/MobileNav';
 import { Footer } from './components/layout/Footer';
 import { ToastContainer } from './components/ui/Toast';
 
-// Views
-import { HomePage } from './views/HomePage';
-import { SchedulePage } from './views/SchedulePage';
-import { OngoingPage } from './views/OngoingPage';
-import { GenrePage } from './views/GenrePage';
-import { AnimeDetailPage } from './views/AnimeDetailPage';
-import { WatchPage } from './views/WatchPage';
-import { DonghuaPage } from './views/DonghuaPage';
-import { ComicHomePage } from './views/ComicHomePage';
-import { ComicDetailPage } from './views/ComicDetailPage';
-import { ComicReadPage } from './views/ComicReadPage';
-import { NsfwPage } from './views/NsfwPage';
-import { SearchPage } from './views/SearchPage';
-import { LibraryPage } from './views/LibraryPage';
+// Views imported from barrel index for robust module resolution on all build platforms
+import {
+  HomePage,
+  SchedulePage,
+  OngoingPage,
+  GenrePage,
+  AnimeDetailPage,
+  WatchPage,
+  DonghuaPage,
+  ComicHomePage,
+  ComicDetailPage,
+  ComicReadPage,
+  NsfwPage,
+  SearchPage,
+  LibraryPage,
+} from './views';
 
 // Mandatory TanStack Query configuration for Sanka Vollerei rate limit compliance
 const queryClient = new QueryClient({
